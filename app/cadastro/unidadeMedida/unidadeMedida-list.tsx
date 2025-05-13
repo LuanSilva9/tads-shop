@@ -2,7 +2,7 @@ import { TableBody, TableHead, TableHeader, TableRow } from "@/components/ui/tab
 import { Table } from "lucide-react";
 
 
-export function MarcaList() {
+export function UnidadeMedidaList() {
   return (
     <section className="mt-8 rounded-md border">
       <Table>

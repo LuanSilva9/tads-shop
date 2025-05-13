@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Link, SaveIcon } from "lucide-react";
 
-export function MarcaForm() {
+export function UnidadeMedidaForm() {
   return (
     <section className="mt-8">
       <form className="max-w-2xl">

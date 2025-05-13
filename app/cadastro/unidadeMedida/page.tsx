@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Link, PlusCircle, SaveIcon } from "lucide-react";
-import { MarcaList } from "./unidadeMedida-list";
+import { UnidadeMedidaList } from "./unidadeMedida-list";
 
 export default function PageUnidadeMedida() {
   return (
@@ -21,7 +21,7 @@ export default function PageUnidadeMedida() {
           </Button>
         </Link>
       </div>
-      <MarcaList />
+      <UnidadeMedidaList />
     </section>
   );
 }
