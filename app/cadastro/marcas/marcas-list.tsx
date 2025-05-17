@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/table";
 import { Edit, Trash } from "lucide-react";
 
-export function MarcaList() {
+export function MarcasList() {
   return (
     <section className="mt-8 rounded-md border">
       <Table>
