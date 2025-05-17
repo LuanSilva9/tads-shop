@@ -6,7 +6,7 @@ import { Label } from "@/components/ui/label";
 import { SaveIcon } from "lucide-react";
 import Link from "next/link";
 
-export function MarcaForm() {
+export function MarcasForm() {
   return (
     <section className="mt-8">
       <form className="max-w-2xl">
