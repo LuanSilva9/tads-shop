@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { PlusCircle } from "lucide-react";
 import Link from "next/link";
-import { MarcaList } from "./marca-list";
+import { MarcasList } from "./marcas-list";
 
 export default function PageMarcas() {
   return (
@@ -20,7 +20,7 @@ export default function PageMarcas() {
           </Button>
         </Link>
       </div>
-      <MarcaList />
+      <MarcasList />
     </section>
   );
 }

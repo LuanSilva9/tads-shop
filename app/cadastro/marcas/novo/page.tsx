@@ -1,4 +1,4 @@
-import { MarcaForm } from "../marca-form";
+import { MarcasForm } from "../marcas-form";
 
 export default function PageNovaMarca() {
   return (
@@ -9,7 +9,7 @@ export default function PageNovaMarca() {
           <p className="text-muted-foreground">Cadastre uma nova marca</p>
         </div>
       </div>
-      <MarcaForm />
+      <MarcasForm />
     </section>
   );
 }
