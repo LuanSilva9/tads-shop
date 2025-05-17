@@ -63,7 +63,7 @@ const data = {
         },
         {
           title: "Unidade de Medida",
-          url: "/cadastro/unidade-medida",
+          url: "/cadastro/unidades-medida",
           icon: Scale,
         },
       ],
