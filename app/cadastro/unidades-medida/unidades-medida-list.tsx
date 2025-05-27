@@ -13,7 +13,7 @@ import { Edit, Trash } from "lucide-react";
 
 export function UnidadesMedidaList() {
   return (
-    <section className="mt-8 rounded-md border">
+    <section className="mt-8 rounded-md border"> 
       <Table>
         <TableHeader>
           <TableRow>

@@ -10,7 +10,7 @@ export default function PageNovaUnidadeMedida() {
           </h1>
           <p className="text-muted-foreground">
             Cadastre uma nova Unidade de Medida
-          </p>
+          </p> 
         </div>
       </div>
       <UnidadesMedidaForm />
