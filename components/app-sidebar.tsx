@@ -48,7 +48,7 @@ const data = {
       items: [
         {
           title: "Produto",
-          url: "/cadastro/produtos",
+          url: "/cadastro/grupos-produto",
           icon: Package,
         },
         {
