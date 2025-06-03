@@ -9,6 +9,7 @@ export default function PageMarcas() {
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-3xl font-bold tracking-tight">Marcas</h1>
+          
           <p className="text-muted-foreground">
             Gerencie seu cadastro de marcas
           </p>
