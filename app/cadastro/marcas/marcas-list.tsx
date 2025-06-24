@@ -12,7 +12,7 @@ import { Edit, Trash } from "lucide-react";
 
 
 export async function MarcasList() {
-  const response = await fetch('http://localhost:3002/marcas')
+  const response = await fetch('http://localhost:3002/marcas', {cache: 'no-store'})
   const marcas:Marca[] = await response.json();
 
   return (
