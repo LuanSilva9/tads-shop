@@ -48,7 +48,7 @@ const data = {
       items: [
         {
           title: "Produto",
-          url: "/cadastro/grupos-produto",
+          url: "/cadastro/produtos",
           icon: Package,
         },
         {
@@ -58,7 +58,7 @@ const data = {
         },
         {
           title: "Grupo",
-          url: "/cadastro/grupos",
+          url: "/cadastro/grupos-produto",
           icon: ListFilter,
         },
         {

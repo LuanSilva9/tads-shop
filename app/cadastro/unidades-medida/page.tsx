@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 
-import { PlusCircle  } from "lucide-react";
+import { PlusCircle } from "lucide-react";
 import { UnidadesMedidaList } from "./unidades-medida-list";
 import Link from "next/link";
 export default function PageUnidadesMedida() {

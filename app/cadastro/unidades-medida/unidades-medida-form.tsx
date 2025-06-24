@@ -11,7 +11,7 @@ export function UnidadesMedidaForm() {
   return (
     <section className="mt-8">
       <form className="max-w-2xl space-y-4">
-        <div className="space-y-4"> 
+        <div className="space-y-4">
           <Label htmlFor="nome">Nome</Label>
           <Input name="nome" id="nome" />
         </div>

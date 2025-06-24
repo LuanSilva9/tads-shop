@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/table";
 import { Edit, Trash } from "lucide-react";
 
-export function ProdutosList() {
+export function GruposProdutoList() {
   return (
     <section className="mt-8 rounded-md border">
       <Table>
@@ -19,13 +19,15 @@ export function ProdutosList() {
           <TableRow>
             <TableHead className="w-10">ID</TableHead>
             <TableHead>Nome</TableHead>
+            <TableHead>Subgrupos</TableHead>
             <TableHead className="w-[100px]">Ações</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
           <TableRow>
             <TableCell className="font-medium">1</TableCell>
-            <TableCell>produto 1</TableCell>
+            <TableCell>Grupo 1</TableCell>
+            <TableCell>Subgrupos</TableCell>
             <TableCell>
               <div className="flex gap-2">
                 <Button size="icon">
@@ -39,7 +41,8 @@ export function ProdutosList() {
           </TableRow>
           <TableRow>
             <TableCell className="font-medium">2</TableCell>
-            <TableCell>produto 2</TableCell>
+            <TableCell>Grupo 2</TableCell>
+            <TableCell>Subgrupos</TableCell>
             <TableCell>
               <div className="flex gap-2">
                 <Button size="icon">
