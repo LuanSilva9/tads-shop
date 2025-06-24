@@ -4,6 +4,7 @@ import { PlusCircle } from "lucide-react";
 import { MarcasList } from "./marcas-list";
 
 import Link from "next/link";
+import { Suspense } from "react";
 
 export const dynamic = 'force-dynamic'; // Force dynamic rendering for this page
 export default function PageMarcas() {
@@ -23,7 +24,9 @@ export default function PageMarcas() {
           </Button>
         </Link>
       </div>
-        <MarcasList />
+        <Suspense fallback={<div>Carregando...</div>}>
+          <MarcasList />
+        </Suspense>
     </section>
   );
 }
