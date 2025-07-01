@@ -1,5 +1,6 @@
 "use client"
 
+import { deletarMarca } from "@/actions/marca-actions";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -13,7 +14,12 @@ import {
 } from "@/components/ui/alert-dialog";
 import { Button } from "@/components/ui/button"
 import { Trash } from "lucide-react";
-export function BtnDelete() {
+export function BtnDelete({id} : any ) {
+
+  async function handleDelete() {
+    await deletarMarca(id)
+  }
+
   return (
     <AlertDialog>
       <AlertDialogTrigger asChild>
@@ -29,7 +35,7 @@ export function BtnDelete() {
         </AlertDialogHeader>
         <AlertDialogFooter>
           <AlertDialogCancel>Cancelar</AlertDialogCancel>
-          <AlertDialogAction>Continuar</AlertDialogAction>
+          <AlertDialogAction onClick={handleDelete}>Continuar</AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogContent>
     </AlertDialog>

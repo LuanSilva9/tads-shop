@@ -1,20 +1,20 @@
 'use server'
 
+import { stringifyFormData } from "@/lib/helpers"
 import { redirect } from "next/navigation"
 
 export async function criarMarca(formData:FormData){
      console.log(formData)
- let response =  fetch('http://localhost:3002/marcas',{
+ let response =  fetch(`${process.env.API_URL}/marca`,{
         method:'POST',
-        body:JSON.stringify({nome:formData.get('nome')})
+        body:stringifyFormData(formData)
     })
    
     redirect('/cadastro/marcas/')
 }
-export async function deletarMarca(formData:FormData){
-    let response =  fetch('http://localhost:3002/marcas',{
+export async function deletarMarca(id: string){
+    let response =  fetch(`${process.env.API_URL}/marca/${id}`,{
         method:'DELETE',
-        body:JSON.stringify({nome:formData.get('id')})
     })
     redirect('/cadastro/marcas/')
 }

@@ -13,7 +13,7 @@ import { Edit, Trash } from "lucide-react";
 
 
 export async function MarcasList() {
-  const response = await fetch('http://localhost:3002/marcas', {cache: 'no-store'})
+  const response = await fetch(`${process.env.API_URL}/marca`, {cache: 'no-store'})
   const marcas:Marca[] = await response.json();
 
   return (
@@ -36,7 +36,7 @@ export async function MarcasList() {
                   <Button size="icon">
                     <Edit />
                   </Button>
-                  <BtnDelete/>
+                  <BtnDelete id={marca.id}/>
                 </div>
               </TableCell>
             </TableRow>
